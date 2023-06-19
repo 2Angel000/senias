@@ -46,3 +46,10 @@ a {
 .espaciado{
   margin-left: 10px;
 }
+
+
+textarea{
+  resize: none;
+  width: 100%;
+  height: 80%;
+}
