@@ -13,7 +13,7 @@ export default function Error404() {
             ¡Oh no!. Página No Encontrada :/
           </h1>
           <img
-            className="align-center m-auto"
+            className="align-center m-auto pt-5"
             style={{ width: "15%", height: "15%" }}
             src={process.env.PUBLIC_URL + i_404}
             alt="404"

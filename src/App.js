@@ -6,6 +6,7 @@ import Home from "./paginas/Home";
 import NS from "./paginas/NS";
 import SN from "./paginas/SN";
 import Informacion from "./paginas/Informacion";
+import Senias from "./paginas/Senias";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/"  element={<Welcome/>}/>
+        <Route path="/senias"  element={<Senias/>}/>
         <Route path="/home"  element={<Home/>}/>
         <Route path="/NS"  element={<NS/>}/>
         <Route path="/SN"  element={<SN/>}/>
