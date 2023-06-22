@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/senias/static/css/main.8ab2d8c8.css",
-    "main.js": "/senias/static/js/main.7b1b1fbe.js",
+    "main.js": "/senias/static/js/main.ebdd0e2f.js",
     "static/js/496.d77ec817.chunk.js": "/senias/static/js/496.d77ec817.chunk.js",
     "index.html": "/senias/index.html",
     "main.8ab2d8c8.css.map": "/senias/static/css/main.8ab2d8c8.css.map",
-    "main.7b1b1fbe.js.map": "/senias/static/js/main.7b1b1fbe.js.map",
+    "main.ebdd0e2f.js.map": "/senias/static/js/main.ebdd0e2f.js.map",
     "496.d77ec817.chunk.js.map": "/senias/static/js/496.d77ec817.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ab2d8c8.css",
-    "static/js/main.7b1b1fbe.js"
+    "static/js/main.ebdd0e2f.js"
   ]
 }

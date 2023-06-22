@@ -2,8 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Nav() {
-  const logoN = "/images/Logo_letraB.png";
-  const logoB = "/images/Logo_letraN.png";
+  const logoN = "/images/logo_letraB.png";
+  const logoB = "/images/logo_letraN.png";
 
   return (
     <>
