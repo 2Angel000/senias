@@ -2,6 +2,7 @@
   "name": "senias",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://2angel000.github.io/senias",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -14,6 +15,8 @@
     
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d buil",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

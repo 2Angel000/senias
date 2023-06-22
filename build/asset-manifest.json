@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ab2d8c8.css",
-    "main.js": "/static/js/main.5d67bb27.js",
-    "static/js/787.065e222b.chunk.js": "/static/js/787.065e222b.chunk.js",
-    "index.html": "/index.html",
-    "main.8ab2d8c8.css.map": "/static/css/main.8ab2d8c8.css.map",
-    "main.5d67bb27.js.map": "/static/js/main.5d67bb27.js.map",
-    "787.065e222b.chunk.js.map": "/static/js/787.065e222b.chunk.js.map"
+    "main.css": "/Proyecto_Senias_REACT/static/css/main.8ab2d8c8.css",
+    "main.js": "/Proyecto_Senias_REACT/static/js/main.d7b67da2.js",
+    "static/js/787.065e222b.chunk.js": "/Proyecto_Senias_REACT/static/js/787.065e222b.chunk.js",
+    "index.html": "/Proyecto_Senias_REACT/index.html",
+    "main.8ab2d8c8.css.map": "/Proyecto_Senias_REACT/static/css/main.8ab2d8c8.css.map",
+    "main.d7b67da2.js.map": "/Proyecto_Senias_REACT/static/js/main.d7b67da2.js.map",
+    "787.065e222b.chunk.js.map": "/Proyecto_Senias_REACT/static/js/787.065e222b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ab2d8c8.css",
-    "static/js/main.5d67bb27.js"
+    "static/js/main.d7b67da2.js"
   ]
 }
