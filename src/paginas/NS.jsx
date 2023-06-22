@@ -5,20 +5,59 @@ import { useState } from "react";
 
 export default function NS() {
 
-  const [txtValor, setTxtValor] = useState("");
-  
-  const handleTextareaChange = (event) =>{
-    const value = event.target.value;
-    setTxtValor(value);
-    
-    for(let i=0; i<value.lenght; i++){
-      const caracter = value[i];
-      //realizado la comparación
-      if(caracter >= "a" && caracter <= "z"){
-        console.log(`${caracter} es una minuscula?`);
+  function resizeDiv() {
+    const textarea = document.querySelector("textarea");
+    const div = document.getElementById("imagenes");
+    div.style.height = textarea.scrollHeight + "px";
+  }
+  window.addEventListener("DOMContentLoaded", resizeDiv);
+
+  const images = {
+    a: "images/Logo.png",
+    b: "images/Logo.png",
+    c: "images/Logo.png",
+    d: "images/Logo.png",
+    e: "images/Logo.png",
+    f: "images/Logo.png",
+    g: "images/Logo.png",
+    h: "images/Logo.png",
+    i: "images/Logo.png",
+    j: "images/Logo.png",
+    k: "images/Logo.png",
+    l: "images/Logo.png",
+    m: "images/Logo.png",
+    n: "images/Logo.png",
+    o: "images/Logo.png",
+    p: "images/Logo.png",
+    q: "images/Logo.png",
+    r: "images/Logo.png",
+    s: "images/Logo.png",
+    t: "images/Logo.png",
+    u: "images/Logo.png",
+    w: "images/Logo.png",
+    v: "images/Logo.png",
+    x: "images/Logo.png",
+    y: "images/Logo.png",
+    z: "images/Logo.png",
+  };
+
+  let imageList=[];
+
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    if (/[a-z]/.test(key)) {
+      const image = images[key];
+      if (image) {
+        const imagenes = document.getElementById("imagenes");
+        const imgElement = document.createElement("img");
+        imgElement.src = process.env.PUBLIC_URL+image;
+        imgElement.alt = "Letra " + key;
+        imagenes.appendChild(imgElement);
+        imageList.push(image);
       }
     }
-  };
+  });
+
 
   return (
     <>
@@ -33,6 +72,7 @@ export default function NS() {
               name=""
               id=""
               cols="30"
+              placeholder="Esquibe aquí"
               rows="10"
             ></textarea>
           </section>
@@ -41,16 +81,10 @@ export default function NS() {
           </section>
           <section className="flex-grow ml-5 mr-5">
             <h3 className="font-bold text-gray-600 mb-10">Señas</h3>
-            <textarea
-              className="border border-blue-200 p-2"
-              name=""
-              id=""
-              value={txtValor}
-              onChange={handleTextareaChange}
-              placeholder="Escriba aquí"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <div
+              className="border border-blue-200 p-2 img-traductor"
+              id="imagenes"
+            ></div>
           </section>
         </div>
       </section>

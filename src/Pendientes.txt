@@ -1,1 +1,2 @@
 1. Responsive para Mobiles en /info
+2. Funcionalidad y modificar la redundancia al ingresar un caracter
