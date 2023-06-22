@@ -2,7 +2,7 @@
   "name": "senias",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://2angel000.github.io/senias",
+  "homepage": "http://2angel000.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",

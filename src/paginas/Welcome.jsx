@@ -45,7 +45,7 @@ export default function Welcome() {
                   </a>
                 </NavLink>
                 <NavLink to={"/info"}>
-                  <a className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-white-900 shadow-sm hover:focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  <a className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-purple-100 shadow-sm hover:focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
                     Desarrollador<span> →</span>
                   </a>
                 </NavLink>
