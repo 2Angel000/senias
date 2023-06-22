@@ -19,7 +19,7 @@ export default function Senias() {
             alt="404"
           />
           <p className="mt-6 text-base leading-7 text-gray-600 sm:text-2xl">
-            Traductor de Lenguaje Natural a Señas :D
+            Traductor de Lenguaje Natural a Señas
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <NavLink to={"/"}>
