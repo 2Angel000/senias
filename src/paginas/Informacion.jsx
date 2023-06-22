@@ -34,7 +34,7 @@ export default function Informacion() {
         <div className=" rounded overflow-hidden shadow-lg bg-gray-100">
           <img
             className="w-full rounded-full m-auto"
-            src={process.env.PUBLIC_URL + imgPerfil}
+            src={imgPerfil}
             alt="Imagen de perfil"
             style={{ width: "290px", height: "290px", marginTop: "20px" }}
           />
