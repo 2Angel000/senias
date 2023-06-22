@@ -3,7 +3,7 @@ import Nav from "../Nav";
 import Flotante from "../components/Flotante";
 
 export default function Home() {
-  const logo = "/images/Logo_letraN.png";
+  const logo = "/images/logo_letraN.png";
 
   return (
     <>
