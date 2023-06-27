@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "../Nav";
+import ImageMapping from "../components/ImageMapping";
 import { useState } from "react";
 
 export default function SN() {
@@ -52,6 +53,12 @@ export default function SN() {
           </section>
         </div>
       </section>
+      <div>
+      <h1 className="text-white">Comparación de caracteres y colocación de imágenes</h1>
+      <div className="overflow-x-auto flex justify-center">
+        <ImageMapping />
+      </div>
+    </div>
     </>
   );
 }

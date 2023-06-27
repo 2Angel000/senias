@@ -55,5 +55,6 @@ textarea{
 }
 
 .img-traductor{
+  max-width: 90%;
   height: auto;
 }
