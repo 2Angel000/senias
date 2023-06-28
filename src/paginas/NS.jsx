@@ -20,6 +20,7 @@ export default function NS() {
     l: "images/l.png",
     m: "images/m.png",
     n: "images/n.png",
+    ñ: "images/ñ.png",
     o: "images/o.png",
     p: "images/p.png",
     q: "images/q.png",
@@ -38,24 +39,6 @@ export default function NS() {
     const text = event.target.value.toLowerCase();
     setInputText(text);
   };
-
-  // const getImageElements = () => {
-  //   const imageElements = [];
-
-  //   for (let i = 0; i < inputText.length; i++) {
-  //     const character = inputText.charAt(i);
-
-  //     if (character === " ") {
-  //       // Si el carácter es un espacio en blanco, agregamos un espacio vacío en lugar de una imagen
-  //       imageElements.push(<span key={i}>&nbsp;</span>);
-  //     } else if (imageMapping.hasOwnProperty(character)) {
-  //       const imageSrc = `${process.env.PUBLIC_URL}/${imageMapping[character]}`;
-  //       imageElements.push(<img key={i} src={imageSrc} alt={character} />);
-  //     }
-  //   }
-
-  //   return imageElements;
-  // };
 
   const getImageElements = () => {
     const imageElements = [];
@@ -116,8 +99,14 @@ export default function NS() {
       <section className="relative isolate overflow-hidden bg-white px-5 py-24 sm:py-32 lg:px-8">
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
         <div className="mx-auto max-w-8xl lg:max-w-8xl flex flex-col sm:flex-row">
-          <section className=" flex-grow mr-5 ml-5" style={{minWidth: "20vw", maxWidth: "25vw"}}>
-            <h3 className="font-bold text-gray-600 mb-10">Lenguaje Natural</h3>
+          <section
+            className=" flex-grow mr-5 ml-5"
+            style={{ minWidth: "20vw", maxWidth: "25vw" }}
+          >
+            <h3 className="font-bold text-gray-600 mb-10">
+            <i class="fa-solid fa-language"/>
+            <span className="espacio"/> Lenguaje Natural
+            </h3>
             <textarea
               className="border border-red-200 p-2 mt-5"
               name=""
@@ -132,11 +121,15 @@ export default function NS() {
             <span className="text-gray-400 text-2xl m-auto">→</span>
           </section>
           <section className="flex-grow ml-5 mr-5">
-            <h3 className="font-bold text-gray-600 mb-10">Señas</h3>
+            <h3 className="font-bold text-gray-600 mb-10">
+              <i class="fa-solid fa-hands" />
+              <span className="espacio"/> Señas
+            </h3>
             <div
               className="border border-blue-200 p-2 img-traductor overflow-auto"
               id="imagenes"
-              style={{ width: "100%", maxHeight: "30vh", minHeight: "50vh" }}>
+              style={{ width: "100%", maxHeight: "30vh", minHeight: "50vh" }}
+            >
               {getImageElements()}
             </div>
           </section>

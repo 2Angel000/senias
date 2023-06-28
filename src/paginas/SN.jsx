@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../Nav";
 import ImageMapping from "../components/ImageMapping";
 import { useState } from "react";
+import Construccion from "../components/Construccion";
 
 export default function SN() {
   const [txtValor, setTxtValor] = useState("");
@@ -25,6 +26,7 @@ export default function SN() {
       <section className="relative isolate overflow-hidden bg-white px-5 py-24 sm:py-32 lg:px-8">
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
         <div className="mx-auto max-w-8xl lg:max-w-8xl flex flex-col sm:flex-row">
+          <Construccion/>
           <section className=" flex-grow mr-5 ml-5">
             <h3 className="font-bold text-gray-600 mb-10">Senias</h3>
             <textarea
@@ -46,7 +48,6 @@ export default function SN() {
               id=""
               value={txtValor}
               onChange={handleTextareaChange}
-              placeholder="Escriba aquí"
               cols="30"
               rows="10"
             ></textarea>
@@ -56,7 +57,7 @@ export default function SN() {
       <div>
       <h1 className="text-white">Comparación de caracteres y colocación de imágenes</h1>
       <div className="overflow-x-auto flex justify-center">
-        <ImageMapping />
+        {/* <ImageMapping /> */}
       </div>
     </div>
     </>
