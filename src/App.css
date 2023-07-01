@@ -58,3 +58,34 @@ textarea{
   max-width: 90%;
   height: auto;
 }
+@media only screen and (max-width: 767px) {
+
+  /*VISTA INFORMACIÓN*/
+  .general{
+    overflow: auto;
+  }
+
+  .habilidades{
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+
+  .informacion{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redes{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sep{
+    padding-left: 1px;
+  }
+
+  /*VISTA TRADUCTOR*/
+
+
+}

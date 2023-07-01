@@ -6,7 +6,8 @@ import Otros from "../components/Otros";
 import Flotante from "../components/Flotante";
 
 export default function Informacion() {
-  const imgPerfil = `https://scontent.fcvj2-1.fna.fbcdn.net/v/t39.30808-6/279434543_2280948688720004_8460385405030603582_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHTFYaXLmVx1nR7WCtBnnb7GxFBbV6XHiUbEUFtXpceJaRwiSC4_1MXBMPLa6NAPwNeWKnWRrUplgCCs5n8k9Q0&_nc_ohc=DEO23VNBG_wAX_6Z0la&_nc_ht=scontent.fcvj2-1.fna&oh=00_AfAm3Ie1GsmWyT4JRNRn3h3-0UYLgnCwacqakpKyFtNdtg&oe=648FBBE8`;
+  const imgPerfil = `/images/yo.jpg`;
+  
   const habilidades = [
     {
       habilidad: "Resiliencia",
@@ -31,10 +32,10 @@ export default function Informacion() {
   return (
     <>
       <div className="bg-white m-1 p-10">
-        <div className=" rounded overflow-hidden shadow-lg bg-gray-100">
+        <div className="rounded overflow-hidden shadow-lg bg-gray-100 general">
           <img
             className="w-full rounded-full m-auto"
-            src={imgPerfil}
+            src={process.env.PUBLIC_URL+imgPerfil}
             alt="Imagen de perfil"
             style={{ width: "290px", height: "290px", marginTop: "20px" }}
           />
@@ -65,19 +66,20 @@ export default function Informacion() {
             </p>
           </div>
 
-          <div className="pb-12">
+          <div className="pb-10 habilidades">
             {habilidades.map((habilidad, index) => (
               <Habilidad key={index} habilidad={habilidad.habilidad} />
             ))}
           </div>
 
-          <div className="px-6 pt-5 mb-8 py-4 h-56 grid grid-cols-4 mt-8 gap-4 content-center">
+          <div className="px-6 pt-5 mb-8 py-4 h-56 grid grid-cols-4 mt-8 gap-4 content-center
+          informacion">
             <div className="inline-block py-4">
               <div className="font-bold text-xl mb-2">Contacto</div>
               <Contact />
             </div>
 
-            <div className="inline-block py-4 m-auto col-span-2">
+            <div className="inline-block py-4 m-auto col-span-2 content-center">
               <div className="font-bold text-xl mb-2">Conocimientos</div>
               <Conocimientos />
             </div>

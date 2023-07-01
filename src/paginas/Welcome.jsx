@@ -53,14 +53,14 @@ export default function Welcome() {
             </div>
             <div className="relative mt-16 h-80 lg:mt-8">
               <img
-                className="flex items-center justify-center mx-2  w-[35rem] rounded-md"
+                className="flex items-center object-contain justify-center mx-2  w-[35rem] rounded-md"
                 src={process.env.PUBLIC_URL + "/images/BienvenidoB.png"}
                 alt="App screenshot"
                 style={{ width: "100%", height: "50%", marginTop: "35%" }}
               />
               <p className="text-white leading-8 sm:text-2xl text-opacity-40 ">
                 <span className="maquina-escribir">
-                  BIENVENIDOS</span>
+                  BIENVENIDO</span>
               </p>
             </div>
           </div>

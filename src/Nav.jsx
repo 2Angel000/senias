@@ -110,7 +110,7 @@ export default function Nav() {
                 Lenguaje Natural - Señas
               </a>
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to={"/SN"}
               className={({ isActive }) =>
                 isActive
@@ -121,7 +121,7 @@ export default function Nav() {
               <a className="text-gray-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
                 Señas - Lenguaje Natural
               </a>
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </nav>

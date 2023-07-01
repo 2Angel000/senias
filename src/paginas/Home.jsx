@@ -10,11 +10,11 @@ export default function Home() {
       <Nav />
       <div className="bg-white">
         <main>
-          <div class="grid grid-cols-2 mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 h-19">
-            <div className="mt-12 select-none">
-              <img  src={process.env.PUBLIC_URL + logo} alt="" />
+          <div class="grid grid-rows-2 mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 h-19">
+            <div className="mt-2 select-none m-auto">
+              <img  src={process.env.PUBLIC_URL + logo} alt=""/>
             </div>
-            <div className="mt-12">
+            <div className="mt-8">
               <h1 className="text-black font-bold text-2xl">
                 PROPÓSITO
               </h1>
@@ -25,7 +25,10 @@ export default function Home() {
                 este proyecto tiene enfoque en ayudar satisfactoriamente a las personas que lo necesiten.
                 <br /> <br />
                 <span className="espaciado"/>Quiero mencionar que el presente proyecto queda sujeto a futuras mejoras, así como futuras integraciones y funcionalidades
-                que pueden ser agregadas para una traducción de lenguaje efectiva y satisfactoria.
+                que pueden ser agregadas para una traducción de lenguaje efectiva y satisfactoria. <br /> <br />
+                <p className="text-red-300 font-bold">
+                  AVISO: El presente sólo transforma letras a señas.
+                </p>
               </p>
               <p className="pt-2 italic text-gray-500 text-justify">
                 Atentamente: Florencio Martinez Miguel Ángel
