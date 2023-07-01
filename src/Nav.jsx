@@ -58,7 +58,7 @@ export default function Nav() {
                       Lenguaje Natural - Señas
                     </a>
                   </NavLink>
-{/* 
+                  {/* 
                   <NavLink
                     to={"/SN"}
                     className={({ isActive }) =>

@@ -58,6 +58,7 @@ textarea{
   max-width: 90%;
   height: auto;
 }
+
 @media only screen and (max-width: 767px) {
 
   /*VISTA INFORMACIÓN*/
