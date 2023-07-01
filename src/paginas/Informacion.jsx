@@ -32,7 +32,7 @@ export default function Informacion() {
   return (
     <>
       <div className="bg-white m-1 p-10">
-        <div className="rounded overflow-hidden shadow-lg bg-gray-100 general">
+        <div className="hidden lg:block rounded overflow-hidden shadow-lg bg-gray-100 general">
           <img
             className="w-full rounded-full m-auto"
             src={process.env.PUBLIC_URL+imgPerfil}
