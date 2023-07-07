@@ -10,13 +10,13 @@ export default function Informacion() {
 
   const habilidades = [
     {
-      habilidad: "Resiliencia",
+      habilidad: "Trato al cliente",
     },
     {
       habilidad: "Trabajo en Equipo",
     },
     {
-      habilidad: "Trato al cliente",
+      habilidad: "Resiliencia",
     },
     {
       habilidad: "Responsable",
@@ -32,7 +32,7 @@ export default function Informacion() {
   return (
     <>
       <div className="bg-white m-1 p-10">
-        <div className="hidden lg:block md:block rounded overflow-hidden shadow-lg bg-gray-100 general">
+        <div className="md:block hidden lg:block rounded overflow-hidden shadow-lg bg-gray-100 general">
           <img
             className="w-full rounded-full m-auto"
             src={process.env.PUBLIC_URL + imgPerfil}
@@ -66,7 +66,7 @@ export default function Informacion() {
             </p>
           </div>
 
-          <div className="pb-10 habilidades">
+          <div className="pb-10 habilidades mt-2 mb-4">
             {habilidades.map((habilidad, index) => (
               <Habilidad key={index} habilidad={habilidad.habilidad} />
             ))}
@@ -94,72 +94,75 @@ export default function Informacion() {
         </div>
 
         <div className="sm:hidden md:hidden">
+          <div className="rounded overflow-hidden shadow-sm shadow-md bg-gray-100">
+            <img
+              className="w-full rounded-full m-auto"
+              src={process.env.PUBLIC_URL + imgPerfil}
+              alt="Imagen de perfil"
+              style={{ width: "290px", height: "290px", marginTop: "20px" }}
+            />
+            <Flotante />
+            <div className="p-4 text-center">
+              <div className="font-bold text-xl mb-2">
+                <i
+                  className="fas fa-duotone fa-address-card"
+                  style={{ color: "#5F0B74" }}
+                />
+                <span className="espaciado">
+                  Florencio Martinez Miguel Ángel
+                </span>
+              </div>
+              <div className="text-gray-700 text-base">
+                <i
+                  className="fas fa-solid fa-graduation-cap"
+                  style={{ color: "#1398C8" }}
+                />
+                <span className="espaciado">
+                  Ingeniería en Sistemas Computacionales
+                </span>
+                <span className="espaciado text-green-600 font-medium italic">
+                  2019 - Actualidad
+                </span>
+              </div>
+              <div className="text-gray-700 text-base">
+                <i
+                  className="fas fa-location-dot"
+                  style={{ color: "#C81313" }}
+                />
+                <span className="espaciado">
+                  Chilpancingo, Guerrero, México
+                </span>
+              </div>
+            </div>
 
+            <div className="p-4 mt-2 mb-4">
+              <div className="grid grid-cols-2 gap-4 grid-cols-1">
+                {habilidades.map((habilidad, index) => (
+                  <Habilidad key={index} habilidad={habilidad.habilidad} />
+                ))}
+              </div>
+            </div>
+
+            <div className="p-4">
+              <div className="grid grid-cols-1 grid-rows-3 gap-x-0 gap-y-0">
+                <div className="py-4 sep">
+                  <div className="font-bold text-xl mb-2">Contacto</div>
+                  <Contact />
+                </div>
+
+                <div className="py-3">
+                  <div className="font-bold text-xl mb-2">Conocimientos</div>
+                  <Conocimientos />
+                </div>
+
+                <div className="py-3">
+                  <div className="font-bold text-xl mb-2">Publicaciones</div>
+                  <Otros />
+                </div>
+              </div>
+            </div>
+          </div>
           
-        <div className="rounded overflow-hidden shadow-sm shadow-md bg-gray-100">
-          <img
-            className="w-full rounded-full m-auto"
-            src={process.env.PUBLIC_URL + imgPerfil}
-            alt="Imagen de perfil"
-            style={{ width: "290px", height: "290px", marginTop: "20px" }}
-          />
-          <Flotante />
-          <div className="p-4 text-center">
-            <div className="font-bold text-xl mb-2">
-              <i
-                className="fas fa-duotone fa-address-card"
-                style={{ color: "#5F0B74" }}
-              />
-              <span className="espaciado">Florencio Martinez Miguel Ángel</span>
-            </div>
-            <div className="text-gray-700 text-base">
-              <i
-                className="fas fa-solid fa-graduation-cap"
-                style={{ color: "#1398C8" }}
-              />
-              <span className="espaciado">
-                Ingeniería en Sistemas Computacionales
-              </span>
-              <span className="espaciado text-green-600 font-medium italic">
-                2019 - Actualidad
-              </span>
-            </div>
-            <div className="text-gray-700 text-base">
-              <i className="fas fa-location-dot" style={{ color: "#C81313" }} />
-              <span className="espaciado">Chilpancingo, Guerrero, México</span>
-            </div>
-          </div>
-
-          <div className="p-4">
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-1">
-              {habilidades.map((habilidad, index) => (
-                <Habilidad key={index} habilidad={habilidad.habilidad} />
-              ))}
-            </div>
-          </div>
-
-          <div className="p-4">
-            <div className="grid grid-cols-1 grid-rows-3 gap-x-0 gap-y-0">
-              
-              <div className="py-4">
-                <div className="font-bold text-xl mb-2">Contacto</div>
-                <Contact />
-              </div>
-
-              <div className="py-3">
-                <div className="font-bold text-xl mb-2">Conocimientos</div>
-                <Conocimientos />
-              </div>
-
-              <div className="py-3">
-                <div className="font-bold text-xl mb-2">Publicaciones</div>
-                <Otros />
-              </div>
-            </div>
-          </div>
-
-
-        </div>
         </div>
       </div>
     </>
