@@ -3,7 +3,7 @@ import React from "react";
 export default function Conocimientos() {
   return (
     <>
-      <ul className="text-justify m-auto pl-12 pb-12 espaciado sep">
+      <ul className=" text-justify m-auto pl-12 pb-12 sep">
         <li className="text-gray-700 text-base">
           <span className="text-teal-600 font-bold">{"{ }"}</span>
           <span className="espaciado text-teal-600">

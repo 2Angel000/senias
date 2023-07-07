@@ -150,7 +150,7 @@ export default function Informacion() {
                   <Contact />
                 </div>
 
-                <div className="py-3">
+                <div className="py-3 sep">
                   <div className="font-bold text-xl mb-2">Conocimientos</div>
                   <Conocimientos />
                 </div>

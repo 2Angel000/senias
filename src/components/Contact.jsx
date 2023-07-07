@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <>
-      <ul className="text-justify m-auto pl-12 pb-5 espaciado redes sep">
+      <ul className="lg:block text-justify m-auto pl-12 pb-5 redes sep">
         <li className="text-gray-700 text-base">
           <NavLink to={"https://wa.me/qr/QWHKB2HYZV7TI1"} target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-whatsapp" style={{ color: "#22931a" }} />
