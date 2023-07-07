@@ -145,12 +145,12 @@ export default function Informacion() {
 
             <div className="p-4">
               <div className="grid grid-cols-1 grid-rows-3 gap-x-0 gap-y-0">
-                <div className="py-4 sep">
+                <div className="py-4">
                   <div className="font-bold text-xl mb-2">Contacto</div>
                   <Contact />
                 </div>
 
-                <div className="py-3 sep">
+                <div className="py-3">
                   <div className="font-bold text-xl mb-2">Conocimientos</div>
                   <Conocimientos />
                 </div>
