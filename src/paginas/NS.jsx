@@ -113,7 +113,7 @@ export default function NS() {
               <span className="espacio" /> Lenguaje Natural
             </h3>
             <textarea
-              className="border border-red-200 p-2 mt-5 "
+              className="border border-red-200 p-2 mt-5 resize-none"
               // w-80 h-40 resize-none border-0 focus:ring-0"
               name=""
               value={inputText}
