@@ -96,19 +96,25 @@ export default function NS() {
   return (
     <>
       <Nav />
-      <section className="relative isolate overflow-hidden bg-white px-5 py-24 sm:py-32 lg:px-8">
-        <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+      <section className="lg:block relative isolate overflow-hidden bg-white px-5 py-24 sm:py-32 lg:px-8">
+        <div
+          className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left 
+        skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1
+         ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"
+        ></div>
+
         <div className="mx-auto max-w-8xl lg:max-w-8xl flex flex-col sm:flex-row">
           <section
             className="flex-grow mr-5 ml-5 sm:ml-auto"
-            style={{ minWidth: "20vw", maxWidth: "25vw" }}
+            style={{ minWidth: "40vw", maxWidth: "80vw" }}
           >
             <h3 className="font-bold text-gray-600 mb-10 sm:text-red-900">
               <i class="fa-solid fa-language" />
               <span className="espacio" /> Lenguaje Natural
             </h3>
             <textarea
-              className="border border-red-200 p-2 mt-5"
+              className="border border-red-200 p-2 mt-5 "
+              // w-80 h-40 resize-none border-0 focus:ring-0"
               name=""
               value={inputText}
               onChange={processText}
@@ -130,7 +136,7 @@ export default function NS() {
             <div
               className="border border-blue-200 p-2 img-traductor overflow-auto"
               id="imagenes"
-              style={{ width: "100%", maxHeight: "30vh", minHeight: "50vh" }}
+              style={{ maxHeight: "30vh", minHeight: "50vh", maxWidth: "80vw" }}
             >
               {getImageElements()}
             </div>

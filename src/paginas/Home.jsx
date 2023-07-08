@@ -11,11 +11,12 @@ export default function Home() {
       <div className="bg-white">
         <main>
             <div class="grid grid-rows-2 mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 h-auto">
-              <div className="mt-10 select-none m-auto" >
+              <div className="select-none m-auto flex justify-center items-center" >
                 <img src={process.env.PUBLIC_URL + logo} 
-                style={{width: "50%", margin: "0 auto", height: "auto"}} />
+                style={{width: "80%", margin: "0 auto", height: "auto"}}
+                className="max-w-full h-auto" />
               </div>
-              <div className="mt-1">
+              <div className="sm:mt-10">
                 <h1 className="text-black font-bold text-2xl">PROPÓSITO</h1>
                 <p className="m-4 text-justify">
                   <span className="espaciado" />
